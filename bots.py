@@ -45,9 +45,3 @@ def bot_fetcher(items, cart, lock):
         lock.acquire()
         cart.append([i, data[i][0]])
         lock.release()
-
-# print(bots_clerk([]))
-# print(bots_clerk(['104']))
-# print(bots_clerk(['106','109','102']))
-# print(bots_clerk(['103','108','102','110','106']))
-# print(bots_clerk(['106','102','108','109','103','101','110','104','107','105']))
